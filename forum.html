@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #2193b0, #6dd5ed);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .gender {
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn {
+            background: #0056b3;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #003d80;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Kontak Informasi</h2>
+        <form>
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" required>
+            
+            <label for="nohp">No Hp/WA</label>
+            <input type="text" id="nohp" name="nohp" required>
+            
+            <label>Jenis Kelamin</label>
+            <div class="gender">
+                <label><input type="radio" name="gender" value="Laki-laki"> Laki-Laki</label>
+                <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+            </div>
+            
+            <label for="pendidikan">Pendidikan</label>
+            <select id="pendidikan" name="pendidikan">
+                <option value="SD">SD</option>
+                <option value="SMP">SMP</option>
+                <option value="SMA">SMA</option>
+                <option value="S1">S1</option>
+                <option value="S2">S2</option>
+                <option value="S3">S3</option>
+            </select>
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="keperluan">Keperluan</label>
+            <input type="text" id="keperluan" name="keperluan">
+            
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

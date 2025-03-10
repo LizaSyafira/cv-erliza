@@ -1,2 +1,1 @@
-# cv-erliza
-tugas cv
+#tugas pribadi erliza
